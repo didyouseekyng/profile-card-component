@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Kumbh Sans', sans-serif;
+	text-align: center;
+	background-color: hsl(185, 75%, 39%);
+	color: color: #191919;
+	overflow-x: hidden;
+	background-image: url(../images/bg-pattern-bottom.svg), url(../images/bg-pattern-top.svg);
+	background-position: left 10.625rem top 15rem, right 10.937rem top -11.25rem;
+	background-size: 110%, 90%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+hr {
+	background: hsl(0, 0%, 59%);
+	border: none;
+	height: 1px;
+	position: relative;
+	bottom: .5rem;
+	opacity: 40%;
+}
+
+.card {
+	border-radius: 9px;
+	box-shadow: 5px 3px 15px 1px rgba(0, 0, 0, 0.19);
+	background-color: hsl(0, 0%, 100%);
+	background-image: url(../images/bg-pattern-card.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+	padding: .937rem 0;
+	width: 13.437rem;
+	height: 15.75rem;
+}
+
+.card__info {
+	padding: 1.562rem;
+}
+
+.card__info__image {
+	border: .187rem solid hsl(0, 0%, 100%);
+	border-radius: 50%;
+	height: 3.75rem;
+	width: 3.75rem;
+	margin-bottom: .937rem;
+	margin-top: 1.25rem;
+}
+
+.card__info__heading {
+	font-size: .812rem;
+	font-weight: 400;
+	color: hsl(0, 0%, 59%);
+	margin-bottom: .5rem;
+}
+
+.card__info__heading--name {
+	color: #191919;
+	font-weight: 700;
+	margin-right: .5rem;
+}
+
+.card__info__heading_two {
+	font-size: .625rem;
+	font-weight: 400;
+	color: hsl(0, 0%, 59%);
+}
+
+.card__stats {
+	display: flex;
+	justify-content: space-around;
+	padding: .937rem;
+}
+
+.card__stats--spacing {
+	display: flex;
+	flex-direction: column;
+	gap: .25rem;
+}
+
+.card__stats--bold_text {
+	font-size: .812rem;
+	font-weight: 700;
+}
+
+.card__stats--light_text {
+	font-size: .437rem;
+	font-weight: 400;
+	letter-spacing: .062rem;
+}
+
+/*
+@media screen and (max-width:767px) and (min-width:426px) {
+	body {
+		background-position: left 14.562rem top 16.437rem, right 14.125rem top -7.187rem;
+		background-size: 75%, 90%;
+	}
+}
+*/
+
+
+@media screen and (min-width:1024px) {
+	body {
+		background-position: left 30.312rem top 13.312rem, right 34.437rem top -22.687rem;
+		background-size: 67%, 67%;
+		background-attachment: fixed;
+	}
+}
